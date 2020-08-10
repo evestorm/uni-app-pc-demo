@@ -1,0 +1,56 @@
+/* 设置全局样式 */
+/* (1) 页面高度100%,默认字体28upx,默认行高1.8,背景颜色 */
+page {
+	height: 100%;
+	font-size: 28upx;
+	line-height: 1.8;
+}
+
+/* (2) 图片默认100%宽度 */
+image {
+	width: 100%;
+	will-change: transform;
+	/* 防止图片闪一下 */
+}
+
+/* 解决 v-show 无法控制显示隐藏的bug */
+view[hidden], navigator[hidden] {
+	display: none !important;
+}
+
+
+/* 主色调 */
+/* 主背景颜色（橙色）*/
+.main-bg-color {
+	background: #FD6801;
+}
+
+/* 主点击背景颜色（淡橙色）*/
+.main-bg-hover-color {
+	background: rgba(253, 104, 1, 0.85);
+}
+
+/* 主字体颜色（橙色）*/
+.main-text-color {
+	color: #FD6801;
+}
+
+/* 主边框颜色 */
+.main-border-color {
+	border-color: #F1F1F1;
+}
+
+.input-border-color {
+	border-color: #FD6801;
+}
+
+/* 更多点击图片 */
+/* <image
+ 						src="https://pic.cwyyt.cn/upload/yyticons/181708178_right.png"
+ 						class="main-go-more"
+ 					></image> */
+.main-go-more {
+	width: 14rpx;
+	height: 25rpx;
+	margin-left: auto;
+}
